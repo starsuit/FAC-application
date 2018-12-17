@@ -1,0 +1,166 @@
+﻿<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 19 18' height='100%' width='100%'> 
+  <style>
+    /* <![CDATA[ */
+    
+rect {
+  stroke-width: 0.05;
+}
+
+.col-1 {
+  fill: hsl(40,100%,80%);
+  stroke: hsl(40,100%,80%);
+}
+.col-2 {
+  fill: hsl(40,100%,70%);
+  stroke: hsl(40,100%,70%);
+}
+.col-3 {
+  fill: hsl(40,100%,60%);
+  stroke: hsl(40,100%,60%);
+}
+.col-4 {
+  fill: hsl(40,100%,50%);
+  stroke: hsl(40,100%,50%);
+}
+.col-5 {
+  fill: hsl(40,100%,40%);
+  stroke: hsl(40,100%,40%);
+}
+.col-6 {
+  fill: hsl(40,100%,30%);
+  stroke: hsl(40,100%,30%);
+}
+.col-7 {
+  fill: hsl(40,100%,20%);
+  stroke: hsl(40,100%,20%);
+}
+.col-8 {
+  fill: hsl(40,100%,10%);
+  stroke: hsl(40,100%,80%);
+}
+
+.twinkle {
+  fill: hsl(40,100%,100%);
+  animation-name: flash;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+.start-1 {
+  animation-delay: 3.3s;
+}
+.start-2 {
+  animation-delay: 1s;
+}
+.start-3 {
+  animation-delay: 2.1s;
+}
+.start-4 {
+  animation-delay: 4.5s;
+}
+.start-5 {
+  animation-delay: 0s;
+}
+
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+    }
+    /* ]]> */
+  </style>
+  
+  <path d="M0 6.5 H6 M6.5 6 V 4 M7.5 2 V4 M8.5 1 V2 M9.5 0 V1 M10.5 1 V2 M11.5 2 V4 M12.5 4 V6 M13 6.5 H18.5 V8 M17.5 8 V9 M16.5 9 V10 M15.5 10 V11 M14.5 11 V13 M15.5 13 V15 M16.5 15 V17.5 H14 M13.5 17 V16.5 H13 M13 15.5 H11 M11 14.5 H8 M8 15.5 H6 M6 16.5 H5 M5 17.5 H2.5 V15 M3.5 15 V13 M4.5 13 V11 M3.5 11 V10 M2.5 10 V9 M1.5 9 V8 M0.5 8 V7" fill="transparent" stroke="black"/>
+  <g class="col-1">
+  <rect x="1" y="7" width="4" height="1"/>
+  <rect x="2" y="8" width="2" height="1"/>
+  <rect x="7" y="4" width="1" height="1"/>
+  <rect x="8" y="2" width="1" height="2"/>
+  <rect x="9" y="1" width="1" height="2"/>
+  </g>
+  
+   <g class="col-2">
+  <rect x="3" y="9" width="1" height="1"/>
+  <rect x="4" y="8" width="1" height="3"/>
+  <rect x="5" y="7" width="1" height="3"/>
+  <rect x="6" y="6" width="1" height="3"/>
+  <rect x="7" y="5" width="1" height="3"/>
+  <rect x="8" y="4" width="1" height="3"/>
+  <rect x="9" y="3" width="1" height="3"/>
+  <rect x="10" y="2" width="1" height="3"/>
+  </g>
+  
+   <g class="col-3">
+  <rect x="4" y="13" width="1" height="1"/>
+  <rect x="5" y="10" width="1" height="3"/>
+  <rect x="6" y="9" width="1" height="3"/>
+  <rect x="7" y="8" width="1" height="3"/>
+  <rect x="8" y="7" width="1" height="3"/>
+  <rect x="9" y="6" width="1" height="3"/>
+  <rect x="10" y="5" width="1" height="3"/>
+  <rect x="11" y="4" width="1" height="3"/>
+  </g>
+  
+   <g class="col-4">    
+  <rect x="3" y="15" width="1" height="2"/>
+  <rect x="4" y="14" width="1" height="3"/>
+  <rect x="5" y="13" width="1" height="3"/>
+  <rect x="6" y="12" width="1" height="3"/>
+  <rect x="7" y="11" width="1" height="3"/>
+  <rect x="8" y="10" width="1" height="3"/>
+  <rect x="9" y="9" width="1" height="3"/>
+  <rect x="10" y="8" width="1" height="3"/>
+  <rect x="11" y="7" width="1" height="3"/>
+  <rect x="12" y="6" width="1" height="3"/>
+  <rect x="13" y="7" width="1" height="1"/>
+  </g>
+  
+   <g class="col-5">    
+  <rect x="7" y="14" width="1" height="1"/>
+  <rect x="8" y="13" width="1" height="1"/>
+  <rect x="9" y="12" width="1" height="2"/>
+  <rect x="10" y="11" width="1" height="3"/>
+  <rect x="11" y="10" width="1" height="3"/>
+  <rect x="12" y="9" width="1" height="3"/>
+  <rect x="13" y="8" width="1" height="3"/>
+  <rect x="14" y="7" width="1" height="3"/>
+  <rect x="15" y="7" width="1" height="2"/>
+  <rect x="16" y="7" width="1" height="1"/>
+  </g>
+  
+  <g class="col-6">    
+  <rect x="11" y="13" width="1" height="2"/>
+  <rect x="12" y="12" width="1" height="3"/>
+  <rect x="13" y="11" width="1" height="3"/>
+  <rect x="14" y="10" width="1" height="1"/>
+  <rect x="15" y="9" width="1" height="1"/>
+  <rect x="16" y="8" width="1" height="1"/>
+  <rect x="17" y="7" width="1" height="1"/>
+  </g>
+  
+  <g class="col-7">   
+  <rect x="13" y="14" width="1" height="2"/>
+  <rect x="14" y="13" width="1" height="2"/>
+  <rect x="14" y="15" width="2" height="2"/>
+  </g>
+  
+  <g class="eyes">
+    <rect x="7" y="7" width="1" height="3"/>
+    <rect x="10" y="7" width="1" height="3"/>
+  </g>
+  
+  <g>
+    <rect class="twinkle start-1" x="9" y="2" width="1" height="1"/>
+    <rect class="twinkle start-2" x="12" y="8" width="1" height="1"/>
+    <rect class="twinkle start-3" x="4" y="9" width="1" height="1"/>
+    <rect class="twinkle start-4" x="4" y="14" width="1" height="1"/>
+    <rect class="twinkle start-5" x="14" y="14" width="1" height="1"/>
+  </g>
+  
+    </svg>
