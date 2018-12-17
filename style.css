@@ -4,6 +4,9 @@
 
 body {
   margin: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 .section-container {
@@ -21,7 +24,7 @@ img {
   max-height: 100vh;
 }
 
-.overlay {
+.overlay-left {
   background: linear-gradient(
     to right,
     hsla(0, 0%, 100%, 1),
@@ -35,36 +38,97 @@ img {
   position: absolute;
 }
 
+.overlay-right {
+  background: linear-gradient(
+    to right,
+    hsla(0, 0%, 100%, 0) 20%,
+    hsla(0, 0%, 100%, 0.5) 35%,
+    hsla(0, 0%, 100%, 1)
+  );
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  position: absolute;
+}
+
 .text-box {
   z-index: 20;
   top: 0;
   position: absolute;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: hsl(232, 40%, 25%);
-  margin-left: 2vw;
-  font-size: calc(10px + 2.5vmin);
-  width: 50vw;
+
+  color: hsla(36, 100%, 33%, 1);
+
   height: 100%;
   /* overflow: scroll; */
 }
 
+.text-header {
+  font-size: calc(10px + 2.5vmin);
+}
+
 .text-box h1 {
-  font-size: calc(30px + 2.5vmin);
+  font-size: calc(20px + 5vmin);
+  width: 65vw;
+  font-weight: normal;
+  margin: 0.125em 0 0 0;
+}
+
+.text-box h2 {
+  font-size: calc(15px + 4vmin);
+  width: 65vw;
   font-weight: normal;
   margin: 0.125em 0 0 0;
 }
 
 .text-box ul {
   margin: 0.5em 0 0.25em 0;
-  list-style-type: none;
-  /* list-style: square inside none; */
+  width: 50vw;
+  height: 100%;
+  /* list-style-type: none; */
+  list-style: none outside none;
+  left: 0;
   padding: 0;
-  color: hsla(36, 100%, 33%, 1);
+  color: hsl(232, 40%, 25%);
+}
+
+.text-box p {
+  margin: 0.5em 0 0.25em 0;
+  width: 60vw;
+  padding: 0;
+  line-height: 1.5;
+  color: hsl(232, 40%, 25%);
+  font-size: calc(10px + 1.5vmin);
 }
 
 .text-box ul li {
-  margin-top: 2vh;
+  margin-top: 2vmax;
   margin-bottom: 0;
+}
+
+.text-left {
+  margin-left: 2vw;
+}
+
+.text-right {
+  right: 0;
+  text-align: right;
+  margin-right: 2vw;
+  float: right;
+}
+
+.text-right p {
+  float: right;
+}
+
+.section-separator {
+  position: relative;
+  z-index: 20;
+  /* height: 15vh; */
+  /* margin-top: -5vh; */
+  /* margin-bottom: -5vh; */
+  color: hsl(232, 40%, 25%);
+  background-color: hsla(36, 67%, 50%, 0.5);
 }
 
 footer {
