@@ -45,7 +45,7 @@ img {
   font-size: calc(10px + 2.5vmin);
   width: 50vw;
   height: 100%;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .text-box h1 {
