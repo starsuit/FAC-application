@@ -59,7 +59,7 @@ img {
   list-style-type: none;
   /* list-style: square inside none; */
   padding: 0;
-  color: hsl(36, 67%, 40%);
+  color: hsla(36, 82%, 35%, 1);
 }
 
 .text-box ul li {
