@@ -66,3 +66,36 @@ img {
   margin-top: 2vh;
   margin-bottom: 0;
 }
+
+footer {
+  background-color: hsla(36, 67%, 50%, 0.5);
+  /* position: sticky; */
+}
+
+.links {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  padding: 0.5rem;
+}
+
+.svg-link {
+  width: 15vw;
+  max-width: 60px;
+  min-width: 40px;
+}
+
+.svg-link:link {
+  fill: hsl(36, 67%, 100%);
+}
+
+.svg-link:visited {
+  fill: hsl(232, 40%, 25%);
+}
+
+.svg-link:hover {
+  fill: hsl(36, 80%, 45%);
+}
