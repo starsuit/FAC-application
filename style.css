@@ -52,6 +52,15 @@ img {
   position: absolute;
 }
 
+.overlay-white {
+  background-color: hsla(36, 0%, 100%, 0.8);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  position: absolute;
+}
+
 .text-box {
   z-index: 20;
   top: 0;
