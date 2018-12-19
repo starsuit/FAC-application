@@ -138,6 +138,27 @@ img {
   width: 100%;
 }
 
+.mid-box {
+  position: relative;
+  z-index: 20;
+  margin: -2rem 3vw 3vh 3vw;
+  max-width: 1000px;
+  /* width: 70vw; */
+  min-height: 5vh;
+  background-color: white;
+  color: hsl(232, 40%, 25%);
+  box-shadow: 2px 3px 12px hsla(36, 50%, 20%, 0.6);
+  line-height: 1.5;
+}
+
+.mid-box h3 {
+  /* color: hsla(36, 100%, 33%, 1); */
+  background-color: white;
+  font-size: calc(10px + 2.5vw);
+  font-weight: normal;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
 .box {
   margin: 3vh 3vw 3vh 3vw;
   max-width: 1000px;
@@ -226,15 +247,11 @@ img {
 }
 
 .nav-button:active {
-  background-color: hsla(36, 100%, 33%, 0.5);
-}
-
-.down-button {
-  /* margin-top: calc(-1 * (9px)); */
+  background-color: transparent;
 }
 
 .up-button {
-  margin-top: -10vw;
+  margin-top: -10vh;
   display: none;
 }
 
