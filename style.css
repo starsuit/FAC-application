@@ -7,12 +7,14 @@ body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
+  overflow-x: hidden;
 }
 
 .header-container {
   width: 100vw;
   position: relative;
-  max-height: 100vh;
+  max-height: 90vh;
+  overflow: hidden;
 }
 
 img {
@@ -22,6 +24,7 @@ img {
   object-position: 100% 0;
   display: block;
   max-height: 100vh;
+  max-width: 100vw;
 }
 
 .overlay-left {
@@ -53,7 +56,7 @@ img {
 }
 
 .overlay-white {
-  background-color: hsla(36, 0%, 100%, 0.8);
+  background-color: hsla(36, 0%, 100%, 0.5);
   height: 100%;
   width: 100%;
   z-index: 10;
@@ -93,7 +96,7 @@ img {
 .text-box ul {
   margin: 0.5em 0 0.25em 0;
   width: 50vw;
-  height: 100%;
+  /* height: 100%; */
   /* list-style-type: none; */
   list-style: none outside none;
   left: 0;
@@ -132,7 +135,6 @@ img {
 .section-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
   max-height: 100vh;
   width: 100%;
@@ -141,11 +143,11 @@ img {
 .mid-box {
   position: relative;
   z-index: 20;
-  margin: -2rem 3vw 3vh 3vw;
+  margin: -2rem 3vw 0 3vw;
   max-width: 1000px;
   /* width: 70vw; */
   min-height: 5vh;
-  background-color: white;
+  /* background-color: hsla(36, 30%, 80%, 1); */
   color: hsl(232, 40%, 25%);
   box-shadow: 2px 3px 12px hsla(36, 50%, 20%, 0.6);
   line-height: 1.5;
@@ -153,10 +155,11 @@ img {
 
 .mid-box h3 {
   /* color: hsla(36, 100%, 33%, 1); */
-  background-color: white;
-  font-size: calc(10px + 2.5vw);
+  background-color: hsla(36, 40%, 80%, 1);
+  font-size: calc(10px + 2.5vmin);
   font-weight: normal;
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0;
+  padding: 0.75rem 1rem 0.75rem 1rem;
 }
 
 .box {
@@ -178,6 +181,7 @@ img {
   width: 100%;
   height: 100%;
   min-height: 300px;
+  max-height: 400px;
   z-index: 10;
   position: relative;
   transition-property: transform;
@@ -185,11 +189,7 @@ img {
 }
 
 .overlay {
-  background: linear-gradient(
-    to right,
-    hsla(207, 18%, 100%, 1),
-    hsla(207, 18%, 100%, 0)
-  );
+  background-color: hsla(207, 18%, 100%, 0.5);
 }
 
 .title {
