@@ -2,10 +2,7 @@ var down = document.querySelectorAll(".down-button");
 var up = document.querySelectorAll(".up-button");
 var slider = document.querySelectorAll(".img");
 
-console.log(down);
-
 function slideDown(i) {
-  console.log("down");
   slider[i].style.transform = `translatey(100%)`;
   window.setTimeout(function() {
     down[i].style.display = "none";
@@ -16,7 +13,6 @@ function slideDown(i) {
 }
 
 function slideUp(i) {
-  console.log("up");
   slider[i].style.transform = `translatey(0%)`;
   window.setTimeout(function() {
     up[i].style.display = "none";
