@@ -2,8 +2,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --navy: hsl(232, 40%, 25%);
+  --title-blue: hsl(232, 40%, 40%);
+  --mustard: hsl(36, 67%, 60%);
+}
+
 body {
   margin: 0;
+  color: var(--navy);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
@@ -14,10 +21,19 @@ body {
   align-items: center;
 }
 
+ul,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .header-container {
   width: 100vw;
   position: relative;
-  max-height: 90vh;
+  max-height: 450px;
   overflow: hidden;
 }
 
@@ -33,9 +49,9 @@ img {
 
 .overlay-left {
   background: linear-gradient(
-    to right,
+    120deg,
     hsla(0, 0%, 100%, 1),
-    hsla(0, 0%, 100%, 0.5) 45%,
+    hsla(0, 0%, 100%, 0.6) 45%,
     hsla(0, 0%, 100%, 0) 60%
   );
   height: 100%;
@@ -45,160 +61,93 @@ img {
   position: absolute;
 }
 
-.overlay-right {
-  background: linear-gradient(
-    to right,
-    hsla(0, 0%, 100%, 0) 20%,
-    hsla(0, 0%, 100%, 0.5) 35%,
-    hsla(0, 0%, 100%, 1)
-  );
-  height: 100%;
-  width: 100%;
-  z-index: 10;
-  top: 0;
-  position: absolute;
-}
-
-.overlay-white {
-  background-color: hsla(36, 0%, 100%, 0.5);
-  height: 100%;
-  width: 100%;
-  z-index: 15;
-  top: 0;
-  position: absolute;
-}
-
-.text-box {
+.text-header {
   z-index: 20;
   top: 0;
   position: absolute;
+  padding-top: 0.75em;
   padding-bottom: 2em;
-  color: hsla(36, 100%, 33%, 1);
+  padding-left: 2em;
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* overflow: scroll; */
+  width: 100%;
 }
 
-.text-header {
-  font-size: calc(10px + 2.5vmin);
-}
-
-.text-box h1 {
+.text-header h1 {
   font-size: calc(20px + 5vmin);
   width: 65vw;
-  font-weight: normal;
-  margin: 0.125em 0 0 0;
+  font-weight: 900;
+  color: var(--title-blue);
+  text-decoration: underline;
+  text-decoration-color: var(--mustard);
 }
 
-.text-box h2 {
-  font-size: calc(15px + 4vmin);
-  width: 65vw;
-  font-weight: normal;
-  margin: 0.125em 0 0 0;
+.text-header ul {
+  width: 50%;
+  font-size: calc(10px + 2.5vmin);
+  list-style-type: none;
 }
 
-.text-box ul {
-  /* margin: 0.5em 0 0.25em 0; */
-  margin: 0;
-  width: 50vw;
-  /* height: 100%; */
-  /* list-style-type: none; */
-  list-style: none outside none;
-  left: 0;
-  padding: 0;
-  color: hsl(232, 40%, 25%);
-  flex-basis: auto;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.text-box p {
-  margin: 0.5em 0 0.25em 0;
-  width: 60vw;
-  padding: 0;
-  line-height: 1.5;
-  color: hsl(232, 40%, 25%);
-}
-
-.text-box ul li {
-  margin: 0;
-}
-
-.text-left {
-  margin-left: 2vw;
-}
-
-.text-right {
-  right: 0;
-  text-align: right;
-  margin-right: 2vw;
-  float: right;
-}
-
-.text-right p {
-  float: right;
+.text-header li {
+  margin-top: 1em;
 }
 
 .section-container {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  max-height: 100vh;
-  width: 100%;
+  margin: 3em 2em 0;
+  /* display: flex;
+  justify-content: center; */
+  /* height: 100%; */
+  /* max-height: 100vh; */
+  /* width: 100%; */
 }
 
 .mid-box {
   position: relative;
   z-index: 20;
-  margin: -2em 3vw 0 3vw;
+  margin: -2em 2em 0 2em;
   max-width: 1000px;
-  width: 90vw;
-  min-height: 5vh;
-  /* background-color: hsla(36, 30%, 80%, 1); */
-  color: hsl(232, 40%, 25%);
-  box-shadow: 2px 3px 12px hsla(36, 50%, 20%, 0.6);
-  line-height: 1.5;
+  /* min-height: 5vh; */
+  box-shadow: 1px 3px 12px hsla(36, 50%, 20%, 0.6);
+  line-height: 1.25;
+  border-left: 0.75em solid var(--title-blue);
 }
 
-.mid-box h3 {
+.mid-box p {
   /* color: hsla(36, 100%, 33%, 1); */
-  background-color: hsla(36, 67%, 60%, 1);
+  background-color: white;
   font-size: calc(10px + 2vmin);
-  font-weight: normal;
-  margin: 0;
-  padding: 0.75rem 1rem 0.75rem 1rem;
+  /* font-weight: normal; */
+  padding: 1em 1.25em;
 }
 
 .box {
-  margin: 3vh 3vw 3vh 3vw;
+  /* margin: 3em 2em 0; */
   max-width: 800px;
   display: grid;
-  width: 90vw;
-  /* height: 40vh; */
-  min-height: 35vh;
+  height: 360px;
+  /* min-height: 300px; */
   grid-template-areas:
     "title"
     "main";
 
   grid-template-rows: auto 90%;
   color: hsl(232, 40%, 25%);
-  box-shadow: 2px 3px 12px hsla(36, 50%, 20%, 0.6);
+  box-shadow: 1px 3px 12px hsla(36, 50%, 20%, 0.3);
   overflow: hidden;
+  border-top: 0.25em solid var(--mustard);
 }
 
 .img {
   grid-area: main;
   width: 100%;
-  height: 42vh;
-  min-height: 300px;
-  max-height: 400px;
+  height: 300px;
+  /* min-height: 300px; */
+  /* max-height: 400px; */
   z-index: 10;
   position: relative;
   transition-property: transform;
-  transition-duration: 1.5s;
+  transition-duration: 0.75s;
 }
 
 .overlay {
@@ -208,24 +157,28 @@ img {
 .title {
   grid-area: title;
   text-align: center;
-  margin: 0.25rem 0 0rem 0;
-  padding-bottom: calc(-1 * (5vw+9px));
-  color: hsla(36, 100%, 33%, 1);
+  padding: 0.35em;
+  color: var(--title-blue);
   background-color: white;
-  font-size: calc(15px + 4vmin);
-  font-weight: normal;
+  font-size: 2rem;
+  /* font-weight: normal; */
   position: relative;
   /* z-index: 30; */
 }
 
 .text-main {
   grid-area: main;
-  font-size: calc(10px + 1.5vmin);
-  padding: 0 6vmin 4vmin 4vmin;
-  line-height: 1.75;
+  padding: 1.35rem;
+  padding-top: 0;
+  line-height: 1.5;
   /* height: 0px; */
-  overflow: hidden;
+  overflow: scroll;
+  font-size: calc(10px + 1.5vw);
   /* padding: 0px; */
+}
+
+.darken {
+  filter: brightness(98%);
 }
 
 .nav-panel {
@@ -264,21 +217,49 @@ img {
 }
 
 .up-button {
-  margin-top: -8vh;
+  margin-top: -60px;
   display: none;
 }
 
-.section-separator {
-  position: relative;
-  z-index: 20;
-  /* height: 15vh; */
-  /* margin-top: -5vh; */
-  /* margin-bottom: -5vh; */
-  color: hsl(232, 40%, 25%);
-  background-color: hsla(36, 67%, 50%, 0.5);
+@media (min-width: 1000px) {
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+
+  .section-container {
+    margin: 3em 0 0 0.75vw;
+    max-width: 410px;
+  }
+
+  .section-container:last-child {
+    margin: 3em 0.75vw 0 0.75vw;
+  }
+
+  .text-main {
+    padding: 0 1vw 24px 1vw;
+    font-size: calc(15px + 0.25vw);
+  }
+
+  .box {
+    height: 400px;
+  }
+
+  .img {
+    height: 340px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .text-main {
+    padding: 0 1.5vw 24px 1.5vw;
+  }
 }
 
 footer {
+  margin-top: 2em;
   background-color: hsla(36, 67%, 50%, 0.5);
   /* position: sticky; */
 }

@@ -6,20 +6,20 @@ function slideDown(i) {
   slider[i].style.transform = `translatey(100%)`;
   window.setTimeout(function() {
     down[i].style.display = "none";
-  }, 600);
+  }, 300);
   window.setTimeout(function() {
     up[i].style.display = "block";
-  }, 800);
+  }, 600);
 }
 
 function slideUp(i) {
   slider[i].style.transform = `translatey(0%)`;
   window.setTimeout(function() {
     up[i].style.display = "none";
-  }, 500);
+  }, 240);
   window.setTimeout(function() {
     down[i].style.display = "block";
-  }, 700);
+  }, 350);
 }
 
 for (let i = 0; i < down.length; i++) {
