@@ -228,7 +228,7 @@ img {
   line-height: 1.25;
   border-left: 0.75em solid var(--title-blue);
   padding: 1em 1.25em;
-  font-size: calc(10px + 1.5vw);
+  font-size: calc(10px + 2vmin);
 }
 
 .end-box ul {
